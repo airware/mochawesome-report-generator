@@ -1,5 +1,8 @@
 mochawesome-report-generator (marge)
 ============================
+
+## This is a forked project that is altered to work with Airware's test reporting needs
+
 [![npm](https://img.shields.io/npm/v/mochawesome-report-generator.svg?style=flat-square)](http://www.npmjs.com/package/mochawesome-report-generator) [![Build Status](https://img.shields.io/travis/adamgruber/mochawesome-report-generator/master.svg?style=flat-square)](https://travis-ci.org/adamgruber/mochawesome-report-generator) [![Code Climate](https://img.shields.io/codeclimate/github/adamgruber/mochawesome-report-generator.svg?style=flat-square)](https://codeclimate.com/github/adamgruber/mochawesome-report-generator)
 
 **marge** (**m**och**a**wesome-**r**eport-**ge**nerator) is the counterpart to [mochawesome][2], a custom reporter for use with the Javascript testing framework, [mocha][1]. Marge takes the JSON output from [mochawesome][2] and generates a full fledged HTML/CSS report that helps visualize your test suites.
