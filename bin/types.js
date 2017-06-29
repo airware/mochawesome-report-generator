@@ -21,6 +21,7 @@ var Test = t.struct({
   sauceLabsAuth: t.maybe(t.String),
   sauceLabsVideoUrl: t.maybe(t.String),
   jiraKey: t.maybe(t.String),
+  errored: t.maybe(t.Boolean),
   // --end--
   fullTitle: t.String,
   timedOut: t.Boolean,
@@ -36,7 +37,6 @@ var Test = t.struct({
   uuid: Uuid,
   parentUUID: t.maybe(Uuid),
   skipped: t.Boolean,
-  errored: t.maybe(t.Boolean),
   context: t.maybe(t.String),
   isHook: t.Boolean
 });
