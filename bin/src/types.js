@@ -9,6 +9,11 @@ const Uuid = t.refinement(t.String, isUUID, 'UUID');
 
 const Test = t.struct({
   title: t.String,
+  trid: t.maybe(t.String),
+  sessionId: t.maybe(t.String),
+  sauceLabsAuth: t.maybe(t.String),
+  sauceLabsVideoUrl: t.maybe(t.String),
+  jiraKey: t.maybe(t.String),
   fullTitle: t.String,
   timedOut: t.Boolean,
   duration: t.Integer,
@@ -23,6 +28,7 @@ const Test = t.struct({
   uuid: Uuid,
   parentUUID: t.maybe(Uuid),
   skipped: t.Boolean,
+  errored: t.maybe(t.Boolean),
   context: t.maybe(t.String),
   isHook: t.Boolean
 });

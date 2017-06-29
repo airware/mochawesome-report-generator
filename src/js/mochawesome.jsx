@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { MochawesomeReport } from 'components';
 import hljs from 'highlight.js/lib/highlight';
 import reportStore from './reportStore';
@@ -18,7 +20,15 @@ bodyEl.removeAttribute('data-config');
 // Set data in the store
 reportStore.setInitialData({ data, config });
 
+injectTapEventPlugin();
+
+const App = () => (
+  <MuiThemeProvider>
+    <MochawesomeReport store={ reportStore } />
+  </MuiThemeProvider>
+);
+
 ReactDOM.render(
-  React.createElement(MochawesomeReport, { store: reportStore }),
+  <App />,
   document.getElementById('report')
 );

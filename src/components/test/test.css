@@ -41,6 +41,7 @@
   @apply --font-regular;
   @apply --text-overflow;
 
+  display: inline;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -92,6 +93,17 @@
       color: var(--red500);
     }
   }
+}
+
+.trid {
+  float: left;
+  font-size: 14px;
+  border-radius: 10%;
+  color: #fff;
+  margin-right: 4px;
+  padding: 0 10px 0 10px;
+  background-color: #909090;
+  line-height: 24px;
 }
 
 .info {
@@ -148,6 +160,16 @@
   display: none;
   background-color: var(--grey50);
   border: 1px solid var(--grey50);
+  border-radius: 4px;
+
+  @nest .expanded & {
+    display: block;
+    margin: 0 16px 10px 13px;
+  }
+}
+
+.controls-body {
+  display: none;
   border-radius: 4px;
 
   @nest .expanded & {
