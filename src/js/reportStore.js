@@ -8,7 +8,7 @@ class ReportStore {
   @observable showPassed = true;
   @observable showFailed = true;
   @observable showPending = true;
-  @observable showSkipped = false;
+  @observable showSkipped = true;
   @observable quickSummaryWidth = null;
   @observable windowWidth = null;
   @observable showHooks = 'failed'; // [failed|always|never]

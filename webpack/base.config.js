@@ -35,7 +35,7 @@ module.exports = {
   baseConfig: {
     devtool,
     entry: {
-      app: './src/js/mochawesome.js'
+      app: './src/js/mochawesome.jsx'
     },
     output: {
       path: path.resolve(__dirname, '..', 'dist', 'assets'),
